@@ -290,7 +290,7 @@ function completeUnlock() {
 
 // Logic to move the NO btn
 
-noBtn.addEventListener("mouseover", () => {
+function moveNoButton() {
     const min = 200;
     const max = 200;
 
@@ -302,6 +302,24 @@ noBtn.addEventListener("mouseover", () => {
 
     noBtn.style.transition = "transform 0.3s ease";
     noBtn.style.transform = `translate(${moveX}px, ${moveY}px)`;
+}
+
+// Mouse event for desktop
+noBtn.addEventListener("mouseover", moveNoButton);
+
+// Touch events for mobile/tablet
+noBtn.addEventListener("touchstart", (e) => {
+    e.preventDefault();
+    moveNoButton();
+});
+
+noBtn.addEventListener("touchmove", (e) => {
+    e.preventDefault();
+});
+
+noBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    moveNoButton();
 });
 
 // Logic to make YES btn to grow
