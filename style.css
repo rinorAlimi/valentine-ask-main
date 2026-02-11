@@ -43,19 +43,21 @@ body {
 
 .unlock-window {
     width: 90vw;
-    max-width: 800px;
-    padding: 40px;
+    max-width: 600px;
+    max-height: 90vh;
+    padding: 30px 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
     background-image: url("window.png");
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 12px;
-    gap: 20px;
+    gap: 15px;
+    overflow-y: auto;
 
     transform: scale(1.2);
     opacity: 0;
@@ -69,9 +71,9 @@ body {
 
 /* Progress Bar */
 .progress-container {
-    width: 80%;
-    max-width: 400px;
-    margin: 20px 0;
+    width: 90%;
+    max-width: 100%;
+    margin: 10px 0;
 }
 
 .progress-bar {
@@ -92,17 +94,17 @@ body {
 
 /* Interactive Zone */
 #task-container {
-    min-height: 300px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 .task-instruction {
-    font-size: 28px;
+    font-size: 24px;
     color: #000;
-    margin: 10px 0;
+    margin: 5px 0;
     animation: pulse 2s infinite;
     font-weight: bold;
 }
@@ -110,14 +112,13 @@ body {
 .interactive-zone {
     position: relative;
     width: 100%;
-    max-width: 500px;
-    min-height: 200px;
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    padding: 20px;
+    gap: 15px;
+    padding: 10px;
 }
 
 .interactive-item {
@@ -163,10 +164,10 @@ body {
 .quiz-choices {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 12px;
     width: 100%;
-    max-width: 500px;
-    margin: 20px auto;
+    max-width: 90%;
+    margin: 10px auto;
 }
 
 .quiz-choice {
@@ -219,10 +220,10 @@ body {
 .text-input-container {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 12px;
     width: 100%;
-    max-width: 500px;
-    margin: 20px auto;
+    max-width: 90%;
+    margin: 10px auto;
     align-items: center;
 }
 
@@ -298,21 +299,22 @@ body {
 
 .letter-window{
     width: 90vw;
-    max-width: 800px;
-    aspect-ratio: 3/2;
-    padding: 20px 20px 0 20px;
+    max-width: 600px;
+    max-height: 90vh;
+    padding: 20px;
+    padding-top: 120px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
     background-image: url("window.png");
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 12px;
-    gap: 1px;
-    padding-top: 180px;
+    gap: 15px;
+    overflow-y: auto;
 
     transform: scale(1.2);
     opacity: 0;
@@ -325,8 +327,9 @@ body {
 }
 
 h1 {
-    font-size: 30px;
-    margin:0;
+    font-size: 26px;
+    margin: 0;
+    margin-top: 10px;
 }
 
 p {
