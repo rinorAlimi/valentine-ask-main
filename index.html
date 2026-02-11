@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Valentine Letter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aldrich&family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Background Music -->
+    <audio id="background-music" autoplay loop>
+      <source src="Bashed Out.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- Envelope Screen -->
+    <div id="envelope-container">
+      <img src="envelope.png" alt="Envelope" id="envelope" />
+      <p>♡ Lettre d'un inconnu pour une arabe ♡</p>
+    </div>
+
+    <!-- Unlock Screen -->
+    <div id="unlock-container">
+      <div class="unlock-window">
+        <h1>Déverrouille mon cœur ♡</h1>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+          <div class="progress-bar" id="progress-bar"></div>
+          <p class="progress-text">Étape <span id="progress-count">0</span>/5</p>
+        </div>
+
+        <!-- Interactive Tasks -->
+        <div id="task-container">
+          <p class="task-instruction" id="task-instruction">Clique sur tous les cœurs ♡</p>
+          <div class="interactive-zone" id="interactive-zone"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Letter Screen -->
+    <div id="letter-container">
+      <div class="letter-window">
+        <h1 id="letter-title">Veux-tu être ma Valentine ma vie ?</h1>
+
+        <img src="cat_heart.gif" class="cat" id="letter-cat" />
+
+        <div class="buttons" id="letter-buttons">
+          <img src="yes.png" class="btn yes-btn" alt="Yes" />
+
+          <div class="no-wrapper">
+            <img src="no.png" class="btn no-btn" alt="No" />
+          </div>
+        </div>
+
+        <p id="final-text" class="final-text" style="display: none">
+          <strong>hihihi merci je T'AAAAAIMMMMEEEE 🙈</strong>
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
